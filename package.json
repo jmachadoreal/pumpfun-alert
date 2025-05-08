@@ -1,0 +1,54 @@
+{
+  "name": "pumpfun-alert",
+  "version": "1.0.0",
+  "main": "dist/src/index.js",
+  "type": "module",
+  "bin": {
+    "pumpfun-alert": "./dist/src/index.js"
+  },
+  "scripts": {
+    "start": "node dist/src/index.js",
+    "dev": "ts-node-esm src/index.tsx",
+    "build": "tsc && chmod +x dist/src/index.js && cp -r src/assets dist/",
+    "watch": "tsc --watch",
+    "lint": "tsc --noEmit",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "pumpfun",
+    "crypto",
+    "alerts",
+    "cli",
+    "tokens",
+    "websocket",
+    "monitor"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "CLI app que monitora lançamentos de tokens na PumpFun e alerta quando tokens específicos são criados",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "date-fns": "^3.0.6",
+    "ink": "^4.4.1",
+    "node-notifier": "^10.0.1",
+    "open": "^10.0.3",
+    "play-sound": "^1.1.6",
+    "react": "^18.2.0",
+    "terminal-link": "^4.0.0",
+    "ws": "^8.14.2",
+    "zustand": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/node-notifier": "^8.0.5",
+    "@types/open": "^6.2.1",
+    "@types/play-sound": "^1.1.1",
+    "@types/react": "^18.2.45",
+    "@types/ws": "^8.5.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
