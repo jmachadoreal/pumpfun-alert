@@ -51,7 +51,7 @@ export const generateJupiterSwapUrl = (tokenAddress: string): string => {
   const baseUrl = "https://jup.ag/swap";
 
   // Construir a URL: vai de SOL para o token especificado
-  const swapUrl = `${baseUrl}/SOL/${tokenAddress}`;
+  const swapUrl = `${baseUrl}/SOL-${tokenAddress}`;
 
   return swapUrl;
 };
